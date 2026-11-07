@@ -9,7 +9,7 @@ manajemen training, analytics, dan **AI Health Coach**.
 ![Laravel](https://img.shields.io/badge/Laravel-13-red?logo=laravel)
 ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?logo=php)
 ![Tailwind](https://img.shields.io/badge/Tailwind-v4-38BDF8?logo=tailwindcss)
-![Tests](https://github.com/faavha-alt/raga-web/actions/workflows/ci.yml/badge.svg)
+![Tests](https://github.com/faavha/raga-web/actions/workflows/ci.yml/badge.svg)
 
 </div>
 

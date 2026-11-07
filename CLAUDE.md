@@ -1,6 +1,6 @@
 # raga-web
 
-RAGA adalah aplikasi web tracking kesehatan & training (lari/trail running) berbasis data Garmin Connect: dashboard, skor recovery/readiness, manajemen training, analytics, plus AI Health Coach. `raga-web` adalah implementasi Laravel monolitik dari RAGA — bukan sekadar frontend untuk API terpisah, aplikasi ini SENDIRI adalah backend + web UI + penyedia data. Repo publik: `faavha-alt/raga-web`, di-deploy ke `raga.mipa.uns.ac.id` (tampaknya proyek di lingkungan kampus, Fakultas MIPA UNS) via GitHub Actions (SSH, `git reset --hard` + build di server).
+RAGA adalah aplikasi web tracking kesehatan & training (lari/trail running) berbasis data Garmin Connect: dashboard, skor recovery/readiness, manajemen training, analytics, plus AI Health Coach. `raga-web` adalah implementasi Laravel monolitik dari RAGA — bukan sekadar frontend untuk API terpisah, aplikasi ini SENDIRI adalah backend + web UI + penyedia data. Repo publik: `faavha/raga-web`, di-deploy ke `raga.mipa.uns.ac.id` (tampaknya proyek di lingkungan kampus, Fakultas MIPA UNS) via GitHub Actions (SSH, `git reset --hard` + build di server).
 
 ## Arsitektur
 
