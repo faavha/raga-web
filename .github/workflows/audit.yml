@@ -1,0 +1,30 @@
+name: Audit dependensi
+
+on:
+  push:
+    branches: ['**']
+    paths: ['**/composer.lock', '**/package-lock.json', '.github/workflows/audit.yml']
+  schedule:
+    - cron: '0 23 * * 0' # Senin 06.00 WIB: cek celah dependensi baru
+  workflow_dispatch: {}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Siapkan PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+
+      - name: Celah keamanan dependensi PHP
+        working-directory: .
+        run: composer audit --locked --abandoned=ignore
+
+      - name: Celah keamanan dependensi JS (.)
+        working-directory: .
+        run: npm audit --omit=dev --audit-level=high
